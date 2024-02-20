@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>calculator</title> 
+<style>
+#d1{ background-color: 
+black; height: 250px; 
+width: 250px; border
+radius: 50px; 
+} 
+#i1{ margin-top: 
+50px; 
+} 
+p{ 
+color: white; 
+} 
+</style> 
+</head> 
+<body> 
+<center> 
+<div id="d1"> 
+<input type="number" placeholder="enter a number" id="i1"><br><br> 
+<input type="number" placeholder="enter a number" id="i2"><br><br>
+<button onclick="Add()">+</button> 
+<button onclick="Sub()">-</button> 
+<button onclick="Mul()">*</button> 
+<button onclick="Div()">/</button> 
+<p>result:<p id="p1"></p></p> 
+</div> 
+</center> <script> function Add(){ var 
+a=document.getElementById("i1").value; var 
+b=document.getElementById("i2").value; var 
+c=parseFloat(a)+parseFloat(b); 
+document.getElementById("p1").textContent=c; 
+}
+function Sub(){ var 
+a=document.getElementById("i1").value; var 
+b=document.getElementById("i2").value; var  c=parseFloat(a)-parseFloat(b); 
+document.getElementById("p1").textContent=c;  } 
+function Mul(){ var  a=document.getElementById("i1").value; var 
+b=document.getElementById("i2").value; var  c=parseFloat(a)*parseFloat(b); 
+document.getElementById("p1").textContent =c; 
+} 
+function Div(){ var 
+a=document.getElementById("i1").value; var 
+b=document.getElementById("i2").value; var  c=parseFloat(a)/parseFloat(b); 
+document.getElementById("p1").textContent=c;  } 
+</script> 
+</body> 
+</html>
